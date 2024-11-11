@@ -1,18 +1,46 @@
-# Flask GPU app
+# Flask GPU App
 
-Example app that demonstrates how to run a Flask app with a free GPU using Google Colab and ngrok.
+This project showcases how to run a Flask web application with a GPU backend using Google Colab and ngrok.
 
-- Read the blog post: [free stable diffusion app with a gpu backend](https://www.assemblyai.com/blog/build-a-free-stable-diffusion-app-with-a-gpu-backend/)
-- Watch the YouTube tutorial: [https://youtu.be/wBCEDCiQh3Q](https://youtu.be/wBCEDCiQh3Q)
+## Overview
 
-## Instructions
+This app provides an example of deploying a Flask application with free GPU resources, ideal for applications requiring significant computational power, such as machine learning or image processing.
 
-- Open the Colab: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AssemblyAI-Examples/flask-gpu-app/blob/main/notebook.ipynb)
+- **Read the blog post**: [Build a Free Stable Diffusion App with a GPU Backend](https://www.assemblyai.com/blog/build-a-free-stable-diffusion-app-with-a-gpu-backend/)
 
-- Go to [ngrok.com](ngrok.com), get a free API token, and in the Colab replace`YOUR-AUTHTOKEN-HERE` with the token.
+## Getting Started
 
-- Set the runtime to GPU
+Follow the steps below to set up and run the Flask app:
 
-- Click on `Runtime -> Run all`
+1. **Open the Colab Notebook**:
+   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AssemblyAI-Examples/flask-gpu-app/blob/main/notebook.ipynb)
 
-- In the output cell you should see a url similar to this: Running on `http://5fdc-104-196-187-169.ngrok.io`. Open this url and use your app.
+2. **Set Up ngrok**:
+   - Go to [ngrok.com](https://ngrok.com), sign up for a free account, and get an API token.
+   - Replace `YOUR-AUTHTOKEN-HERE` in the Colab notebook with your ngrok token.
+
+3. **Configure the Runtime**:
+   - In Colab, set the runtime to use **GPU**: `Runtime` -> `Change runtime type` -> Set `Hardware accelerator` to `GPU`.
+
+4. **Run the Notebook**:
+   - Click on `Runtime` -> `Run all` to execute all cells in the notebook.
+
+5. **Access Your App**:
+   - After execution, a cell will display a URL like `http://5fdc-104-196-187-169.ngrok.io`. Click this URL to access and use your Flask app.
+
+## Features
+
+- Uses GPU resources provided by Google Colab.
+- ngrok is used to expose the local server to the internet, enabling easy access and testing.
+- This setup is perfect for rapid prototyping and sharing GPU-powered Flask apps.
+
+## Dependencies
+
+Ensure your Colab environment has the necessary Python packages. The notebook includes cell code for installing any required packages automatically.
+
+## Additional Resources
+
+- **Flask Documentation**: [Flask](https://flask.palletsprojects.com/)
+- **ngrok Documentation**: [ngrok](https://ngrok.com/docs)
+
+Enjoy building and sharing your GPU-powered Flask app!
